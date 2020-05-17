@@ -1,0 +1,25 @@
+#content {
+    padding-top:40px;
+}
+.task {
+    padding-top:40px;
+}
+.table td {
+    position: relative;
+}
+.table a.asc:after {
+    content: " \f107";
+    font-family: FontAwesome;
+    font-size: 14px;
+}
+.table a.desc:after {
+    content: " \f106";
+    font-family: FontAwesome;
+    font-size: 14px;
+}
+.icon-ok{
+    position: absolute;
+    right: 8px;
+    top: 10px;
+    color: green;
+}
