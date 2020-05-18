@@ -31,7 +31,7 @@ class IndexModel extends Model {
         if (isset($data['sort']) && in_array($data['sort'], $sort_data)) {
             $sql .= " ORDER BY LCASE(" . $data['sort'] . ")";
         } else {
-            $sql .= " ORDER BY user_id";
+            $sql .= " ORDER BY id";
         }
 
         if (isset($data['order']) && ($data['order'] == 'DESC')) {
