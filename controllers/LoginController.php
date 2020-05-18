@@ -1,5 +1,4 @@
 <?php
-
 class LoginController extends Controller {
 
 	private $pageTpl = '/views/login.tpl.php';
@@ -10,7 +9,6 @@ class LoginController extends Controller {
 		$this->view = new View();
         $this->loginmodel = new LoginModel();
 	}
-
 
 	public function index() {
 
@@ -27,13 +25,10 @@ class LoginController extends Controller {
 
         $data['title'] = "Авторизация пользователя";
 
-		
-
         $data['warning'] = $this->error['warning']??'';
         $data['login'] = $_POST['login']??'';
         $data['password'] = $_POST['password']??'';
-        
-		
+
 		$this->view->render($this->pageTpl, $data);
 	
 	}
@@ -56,5 +51,4 @@ class LoginController extends Controller {
         exit();
 
 	}
-
 }

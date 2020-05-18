@@ -6,7 +6,6 @@ class IndexModel extends Model {
 
     public function __construct() {
 
-
         $this->db = new DB();
 
         if (isset($_SESSION['user_id'])) {

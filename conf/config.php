@@ -26,9 +26,6 @@ require_once("../route.php");
 require_once MODEL_PATH. 'Model.php';
 require_once VIEW_PATH. 'View.php';
 require_once CONTROLLER_PATH. 'Controller.php';
-//require_once LIB_PATH. 'User.php';
 require_once LIB_PATH. 'pagination.php';
-require_once LIB_PATH. 'function.php';
-
 
 Routing::buildRoute();

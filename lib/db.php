@@ -11,7 +11,6 @@ class DB{
 
 
     public function __construct() {
-    //public static function connToDB() {
         $user = self::USER;
         $pass = self::PASS;
         $host = self::HOST;

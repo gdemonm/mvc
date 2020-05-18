@@ -108,7 +108,6 @@ class IndexController extends Controller {
 
     public function changeStatus() {
 
-
 	    $json =array();
 
 	    if (!$this->model->isLogged()) {
@@ -145,7 +144,6 @@ class IndexController extends Controller {
             } else {
                 $json['error'] = "Ошибка!";
             }
-
         }
 
         header('Content-Type: application/json');
