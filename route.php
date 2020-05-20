@@ -34,10 +34,4 @@ class Routing {
 		$controller->$action();
 
 	}
-
-	public function errorPage() {
-
-	}
-
-
 }
